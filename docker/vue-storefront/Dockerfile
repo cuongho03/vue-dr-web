@@ -15,5 +15,5 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates wget python make g+
 # COPY docker/vue-storefront/vue-storefront.sh /usr/local/bin/
 # RUN chmod -R 777 /usr/local/bin/vue-storefront.sh
 # CMD ["vue-storefront.sh"]
-# CMD [ "npm", "start" ]
-RUN yarn dev
+CMD [ "yarn", "start" ]
+
