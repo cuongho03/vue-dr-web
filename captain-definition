@@ -1,10 +1,4 @@
 {
   "schemaVersion": 2,
-  "dockerfilePath" : {
-     "RUN yarn dev -- -L",
-    "ENV NODE_ENV dev",
-    "ENV PORT 80",
-    "EXPOSE 80",
-    "CMD [ \"npm\", \"dev\" ]"
-  }
+  "dockerfilePath" :"./docker/vue-storefont/Dockerfile"
 }
