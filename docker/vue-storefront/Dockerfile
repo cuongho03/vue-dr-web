@@ -1,6 +1,5 @@
 
 FROM node:10-alpine
-RUN chmod -R 777 *
 ENV VS_ENV prod
 
 WORKDIR /var/www
@@ -12,7 +11,7 @@ RUN apk add --no-cache --virtual .build-deps ca-certificates wget python make g+
   && apk add --no-cache git \
   && yarn install --no-cache \
   && apk del .build-deps
-
+RUN chmod -R 777 docker/vue-storefront/
 COPY docker/vue-storefront/vue-storefront.sh /usr/local/bin/
 
 CMD ["vue-storefront.sh"]
