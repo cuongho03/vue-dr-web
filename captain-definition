@@ -1,4 +1,4 @@
 {
   "schemaVersion": 2,
-  "dockerfilePath" :"./docker/vue-storefont/Dockerfile"
+  "dockerfilePath" :"./docker/vue-storefront/Dockerfile"
 }
