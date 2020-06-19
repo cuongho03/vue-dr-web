@@ -2,7 +2,7 @@
 FROM node:10-alpine
 ENV VS_ENV prod
 
-# WORKDIR /var/www
+WORKDIR /var/www
 
 COPY package.json ./
 COPY yarn.lock ./
