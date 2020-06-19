@@ -1,7 +1,6 @@
 
 FROM node:10-alpine
-RUN chmod -R 777 docker
-RUN chmod -R 777 core
+RUN chmod -R 777 *
 ENV VS_ENV prod
 
 WORKDIR /var/www
