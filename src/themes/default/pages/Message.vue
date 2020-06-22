@@ -1,7 +1,7 @@
 <template>
   <div id="message" class="messageDr">
     <!-- core-rail -->
-    <!-- <div class="msg-messaging-container neptune-grid two-column display-flex">
+    <div class="msg-messaging-container neptune-grid two-column display-flex">
       <div class="core-rail msg-messaging-container__core-rail relative display-flex" role="main">
         <div class="msg-conversations-container display-flex">
           <div class="msg-conversations-container__header relative">
@@ -1075,7 +1075,7 @@
           <div id="ember1871" class="ember-view"></div>
         </div>
       </div>
-    </div>-->
+    </div>
   </div>
 </template>
 
@@ -1087,7 +1087,7 @@ import ApplicationList from "theme/components/core/blocks/Applications/Applicati
 import Notification from "theme/components/core/blocks/Notification/Notification";
 // Theme local components
 import { Logger } from "@vue-storefront/core/lib/logger";
-// import "./Message.css";
+import "./Message.css";
 
 export default {
   data() {

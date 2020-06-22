@@ -1,6 +1,6 @@
 <template>
   <div id="Notify" class="messageDr">
-    <!-- <div class="core-rail">
+    <div class="core-rail">
       <div class="nt-banner container">
         <a
           data-control-name="nav_notif_banner"
@@ -2123,7 +2123,7 @@
         <div id="ember278" class="nt-card__occlusion-wrapper--placeholder ember-view" />
         <div id="ember280" class="nt-card__occlusion-wrapper--placeholder ember-view" />
       </section>
-    </div> -->
+    </div>
   </div>
 </template>
 
@@ -2135,8 +2135,8 @@ import ApplicationList from 'theme/components/core/blocks/Applications/Applicati
 import Notification from 'theme/components/core/blocks/Notification/Notification';
 // Theme local components
 import { Logger } from '@vue-storefront/core/lib/logger';
-// import './Message.css';
-// import './Notificaction.css';
+import './Message.css';
+import './Notificaction.css';
 export default {
   data () {
     return {
