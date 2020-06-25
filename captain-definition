@@ -11,6 +11,9 @@
       "RUN apk del .build-deps",
       "COPY ./ /usr/src/app/",
       "ENV VS_ENV production",
+      "CMD [ \"yarn\", \"build:client\" ]",
+      "CMD [ \"yarn\", \"build:server\" ]",
+      "CMD [ \"yarn\", \"build:sw\" ]",
       "CMD [ \"yarn\", \"dev\" ]"
   ]
 }
