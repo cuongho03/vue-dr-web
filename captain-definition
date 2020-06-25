@@ -9,12 +9,9 @@
       "RUN apk add --no-cache --virtual .build-deps ca-certificates wget python make g++",
       "RUN yarn install --no-cache",
       "RUN apk del .build-deps",
-      "COPY ./ /usr/src/app/",
       "ENV VS_ENV production",
-      "CMD [ \"yarn\", \"install\" ]",
-      "CMD [ \"yarn\", \"build:client\" ]",
-      "CMD [ \"yarn\", \"build:server\" ]",
-      "CMD [ \"yarn\", \"build:sw\" ]",
+      "COPY ./ /usr/src/app/",
+      "RUN yarn install --no-cache",
       "CMD [ \"yarn\", \"dev\" ]"
   ]
 }
